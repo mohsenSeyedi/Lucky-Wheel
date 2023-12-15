@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../dist/css/app.css">
+    <title>Document</title>
+</head>
+<body>
+
+  
+
+    <div class="hidden" id="wheelPage">
+        <span id="wheelNameDisplay">Wheel name</span>
+        <span id="landingEntry">Press 'Spin'</span>
+      
+        <div id="wheelContainer">
+        </div>
+      
+        <button id="spin">چرخش</button>
+        <button id="edit">ویرایش</button>
+      </div>
+      
+      <div class="hidden" id="createPage">
+        <span class="title">ساخت گردونه</span>
+        
+        <div class="settings">
+          <input placeholder="نام گردونه را وارد کنید" id="wheelName" />
+          
+      <!--     <br>
+          <span>Options</span> -->
+          <hr>
+          
+          <div id="entryList">
+          </div>
+          
+          <button id="addEntry">+</button>
+          
+          <hr>
+        </div>
+        
+        <button id="createWheelButton">ایجاد گردونه</button>
+      </div>
+      
+      <label for="menuCheckbox" class="openMenu">
+        <div class="bars">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </label>
+      
+      <input id="menuCheckbox" type="checkbox" />
+      <div class="menu">
+        <h3>گردونه ها</h3>
+        <ul id="wheelsList">
+        </ul>
+      </div>
+      
+      <template id="wheelEntryTemplate">
+        <li class="wheelEntryContainer">
+          <span class="wheelEntry">شسیبقش</span>
+        </li>
+      </template>
+      
+      <template id="entryItemTemplate">
+        <div class="entryItem">
+          <input placeholder="نام شانس" class="entryText" />
+          <button class="remove">✖</button>
+        </div>
+      </template>
+      
+      <template id="errorTemplate">
+        <div class="errorPopupContainer">
+          <div class="errorPopup">
+            <span class="msg">Error message here</span>
+            <span class="close">x</span>
+          </div>
+        </div>
+      </template>
+
+      
+
+<script src="../../dist/js/bundled.js"></script>
+</body>
+</html>
+
